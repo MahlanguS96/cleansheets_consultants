@@ -179,5 +179,110 @@ nav a {
 .contact-details a:hover {
   text-decoration: underline;
 }
+/* ===========================
+   Responsive Design
+   =========================== */
+
+/* For tablets and medium screens */
+@media (max-width: 900px) {
+  /* Navigation */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  nav a {
+    margin: 0.5rem;
+  }
+
+  /* Contact Page */
+  .contact-grid {
+    grid-template-columns: 1fr; /* stack form and details vertically */
+  }
+
+  /* Services Page */
+  .service-grid {
+    grid-template-columns: 1fr 1fr; /* two columns instead of three */
+  }
+
+  /* General text */
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+/* For phones and small screens */
+@media (max-width: 600px) {
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  /* Contact Page */
+  .contact-form button {
+    width: 100%; /* full-width button for easy tapping */
+  }
+
+  /* Services Page */
+  .service-grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  /* Homepage hero section */
+  .hero {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  /* General text */
+  body {
+    font-size: 0.9rem;
+  }
+}
+/* Portfolio Page */
+.portfolio-section {
+  padding: 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns for before/after */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.portfolio-item {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-item p {
+  color: #333;
+  font-size: 0.95rem;
+}
 
 
