@@ -31,3 +31,12 @@ nav a {
   text-decoration: none;
   border-radius: 5px;
 }
+/* Services page tweaks */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
