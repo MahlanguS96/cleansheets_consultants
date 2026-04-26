@@ -344,5 +344,35 @@ nav a {
 .blog-summary h3 a:hover {
   color: #0077cc;
 }
+/* Blog Post Styling */
+.blog-post {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.blog-post h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0077cc; /* brand accent color */
+  text-align: center;
+}
+
+.blog-post p {
+  margin-bottom: 15px;
+}
+
+.blog-post footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
 
 
