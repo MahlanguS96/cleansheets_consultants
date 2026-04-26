@@ -284,5 +284,23 @@ nav a {
   color: #333;
   font-size: 0.95rem;
 }
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
 
 
